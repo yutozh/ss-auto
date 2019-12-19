@@ -5,3 +5,5 @@ build
 dist
 ss
 *.spec
+.pyc
+.pyz
