@@ -11,7 +11,6 @@ config_file = os.path.join(base_path, "ss/gui-config.json")
 exe_file = os.path.join(base_path, "ss/Shadowsocks.exe")
 
 pre_url = "http://isx.yt"
-# url = "https://a.ishadowx.net"
 pre = requests.get(pre_url, allow_redirects=False, headers={
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36'})
 url = pre.headers["Location"]
