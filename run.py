@@ -33,6 +33,8 @@ class Script(threading.Thread):
                     while self.ss_process is not None:
                         pass
                     self.fetch_ip_and_start()
+            else:
+                time.sleep(0.1)
 
     def fetch_ip_and_start(self):
         self.msg_queue.put("获取URL...")
