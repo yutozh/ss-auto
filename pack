@@ -1,1 +1,2 @@
-pyinstaller -F -w -i ico.ico main.py
+pyinstaller -F -w -i icon/ico.ico main.py
+pyinstaller run.spec
