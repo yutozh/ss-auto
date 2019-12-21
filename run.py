@@ -133,8 +133,8 @@ if __name__ == '__main__':
     temp_icon = os.path.join(tempfile.gettempdir(), 'tmp.ico')
     with open(temp_icon, 'wb+') as tmp:
         tmp.write(base64.b64decode(Icon.img))
-    root.iconbitmap(temp_icon)
     root.resizable(False, False)
     root.standard_font = (None, 16)
+    root.iconbitmap(temp_icon)  # 放在所有设置之后，否则启动时会闪烁一次
     app = AutoSS(master=root)
     root.mainloop()
